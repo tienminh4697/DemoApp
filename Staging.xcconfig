@@ -1,0 +1,12 @@
+//
+//  Staging.xcconfig
+//  DemoApp
+//
+//  Created by T.Minh on 5/19/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+TOKEN = 123456789
+APP_ICON = AppIconStaging
