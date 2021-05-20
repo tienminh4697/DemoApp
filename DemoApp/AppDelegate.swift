@@ -7,15 +7,49 @@
 
 import UIKit
 
+enum RootType {
+    case login
+    case tabbar
+}
+
+let userdefault = UserDefaults.standard
+let screenSize = UIScreen.main.bounds
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
+    static let shared: AppDelegate = {
+        guard let shared = UIApplication.shared.delegate as? AppDelegate else {
+            fatalError("Cannot cast `UIApplication.shared.delegate` to `AppDelegate`.")
+        }
+        return shared
+    }()
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: ViewController())
-        window?.makeKeyAndVisible()
+        configWindow()
         return true
+    }
+
+    private func configWindow() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = .white
+        window?.makeKeyAndVisible()
+        if !Session.shared.isLogin {
+            setRoot(rootType: .tabbar)
+        } else {
+            setRoot(rootType: .login)
+        }
+    }
+
+    func setRoot(rootType: RootType) {
+        switch rootType {
+        case .login:
+            Session.shared.clearData()
+            window?.rootViewController = LoginViewController()
+        case .tabbar:
+            Session.shared.isLogin = true
+            window?.rootViewController = TabbarViewController()
+        }
     }
 }

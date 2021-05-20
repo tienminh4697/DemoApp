@@ -8,5 +8,6 @@ target 'DemoApp' do
   # Pods for DemoApp
 
 pod 'SDWebImage', '5.0'
-
+pod 'SwiftLint'
+gem 'linterbot'
 end
