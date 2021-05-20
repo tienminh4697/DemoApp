@@ -10,6 +10,16 @@
 		1A48259F26560BF5009F0FFF /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A48259E26560BF5009F0FFF /* App.swift */; };
 		1A4825A426560C3E009F0FFF /* UIColorExts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4825A326560C3E009F0FFF /* UIColorExts.swift */; };
 		1A4825A726560CBF009F0FFF /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4825A626560CBF009F0FFF /* Strings.swift */; };
+		1A4825B3265610D2009F0FFF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4825B1265610D2009F0FFF /* LoginViewController.swift */; };
+		1A4825B4265610D2009F0FFF /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A4825B2265610D2009F0FFF /* LoginViewController.xib */; };
+		1A4825B7265610E7009F0FFF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4825B6265610E7009F0FFF /* LoginViewModel.swift */; };
+		1A4825BC2656110D009F0FFF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4825BA2656110D009F0FFF /* HomeViewController.swift */; };
+		1A4825BD2656110D009F0FFF /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A4825BB2656110D009F0FFF /* HomeViewController.xib */; };
+		1A4825C026561125009F0FFF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4825BF26561125009F0FFF /* HomeViewModel.swift */; };
+		1A4825C42656113C009F0FFF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4825C22656113C009F0FFF /* ProfileViewController.swift */; };
+		1A4825C52656113C009F0FFF /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A4825C32656113C009F0FFF /* ProfileViewController.xib */; };
+		1A4825C826561151009F0FFF /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4825C726561151009F0FFF /* ProfileViewModel.swift */; };
+		1A4825E62656137D009F0FFF /* App.Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4825E52656137D009F0FFF /* App.Color.swift */; };
 		1A7BAFC32655657100EE8A11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7BAFC22655657000EE8A11 /* AppDelegate.swift */; };
 		1A7BAFC72655657100EE8A11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7BAFC62655657100EE8A11 /* ViewController.swift */; };
 		1A7BAFCC2655657300EE8A11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A7BAFCB2655657300EE8A11 /* Assets.xcassets */; };
@@ -23,6 +33,16 @@
 		1A48259E26560BF5009F0FFF /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		1A4825A326560C3E009F0FFF /* UIColorExts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExts.swift; sourceTree = "<group>"; };
 		1A4825A626560CBF009F0FFF /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		1A4825B1265610D2009F0FFF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1A4825B2265610D2009F0FFF /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		1A4825B6265610E7009F0FFF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		1A4825BA2656110D009F0FFF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1A4825BB2656110D009F0FFF /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		1A4825BF26561125009F0FFF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1A4825C22656113C009F0FFF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1A4825C32656113C009F0FFF /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		1A4825C726561151009F0FFF /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		1A4825E52656137D009F0FFF /* App.Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.Color.swift; sourceTree = "<group>"; };
 		1A7BAFBF2655657000EE8A11 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7BAFC22655657000EE8A11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A7BAFC62655657100EE8A11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +83,7 @@
 			children = (
 				1A48259E26560BF5009F0FFF /* App.swift */,
 				1A4825A626560CBF009F0FFF /* Strings.swift */,
+				1A4825E52656137D009F0FFF /* App.Color.swift */,
 			);
 			path = Define;
 			sourceTree = "<group>";
@@ -94,7 +115,9 @@
 		1A4825AB26560D27009F0FFF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1A7BAFC62655657100EE8A11 /* ViewController.swift */,
+				1A4825B0265610BE009F0FFF /* Profile */,
+				1A4825AF265610B5009F0FFF /* Home */,
+				1A4825AE265610B0009F0FFF /* Login */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -113,6 +136,50 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1A4825AE265610B0009F0FFF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1A4825B1265610D2009F0FFF /* LoginViewController.swift */,
+				1A4825B2265610D2009F0FFF /* LoginViewController.xib */,
+				1A4825B6265610E7009F0FFF /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		1A4825AF265610B5009F0FFF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1A4825BA2656110D009F0FFF /* HomeViewController.swift */,
+				1A4825BB2656110D009F0FFF /* HomeViewController.xib */,
+				1A4825BF26561125009F0FFF /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1A4825B0265610BE009F0FFF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1A4825C22656113C009F0FFF /* ProfileViewController.swift */,
+				1A4825C32656113C009F0FFF /* ProfileViewController.xib */,
+				1A4825C726561151009F0FFF /* ProfileViewModel.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		1A4825CD265611F1009F0FFF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1A4825E0265612FD009F0FFF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		1A7BAFB62655657000EE8A11 = {
@@ -139,13 +206,16 @@
 		1A7BAFC12655657000EE8A11 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
-				1A7BAFD02655657300EE8A11 /* Info.plist */,
 				1A7BAFC22655657000EE8A11 /* AppDelegate.swift */,
-				1A4825AD26560D50009F0FFF /* Model */,
+				1A7BAFD02655657300EE8A11 /* Info.plist */,
 				1A48259D26560BE6009F0FFF /* Define */,
+				1A4825E0265612FD009F0FFF /* Extension */,
 				1A4825A226560C29009F0FFF /* Library */,
+				1A4825AD26560D50009F0FFF /* Model */,
+				1A4825CD265611F1009F0FFF /* Network */,
 				1A4825AC26560D37009F0FFF /* Support */,
 				1A4825A926560D13009F0FFF /* View */,
+				1A7BAFC62655657100EE8A11 /* ViewController.swift */,
 			);
 			path = DemoApp;
 			sourceTree = "<group>";
@@ -221,6 +291,9 @@
 			files = (
 				1A7BAFCF2655657300EE8A11 /* LaunchScreen.storyboard in Resources */,
 				1A7BAFCC2655657300EE8A11 /* Assets.xcassets in Resources */,
+				1A4825B4265610D2009F0FFF /* LoginViewController.xib in Resources */,
+				1A4825C52656113C009F0FFF /* ProfileViewController.xib in Resources */,
+				1A4825BD2656110D009F0FFF /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,11 +380,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A4825B3265610D2009F0FFF /* LoginViewController.swift in Sources */,
+				1A4825C026561125009F0FFF /* HomeViewModel.swift in Sources */,
+				1A4825E62656137D009F0FFF /* App.Color.swift in Sources */,
+				1A4825C42656113C009F0FFF /* ProfileViewController.swift in Sources */,
 				1A48259F26560BF5009F0FFF /* App.swift in Sources */,
 				1A4825A426560C3E009F0FFF /* UIColorExts.swift in Sources */,
+				1A4825BC2656110D009F0FFF /* HomeViewController.swift in Sources */,
 				1A4825A726560CBF009F0FFF /* Strings.swift in Sources */,
+				1A4825C826561151009F0FFF /* ProfileViewModel.swift in Sources */,
 				1A7BAFC72655657100EE8A11 /* ViewController.swift in Sources */,
 				1A7BAFC32655657100EE8A11 /* AppDelegate.swift in Sources */,
+				1A4825B7265610E7009F0FFF /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

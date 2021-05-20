@@ -7,10 +7,9 @@
 
 import Foundation
 extension App {
-    
+
     struct String {
        static let String1 = "define string"
     }
 }
-
 extension App.String { }
