@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  SearchViewController.swift
 //  DemoApp
 //
 //  Created by T.Minh on 5/20/21.
@@ -7,10 +7,10 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class SearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Home"
+        title = "Search"
     }
 }

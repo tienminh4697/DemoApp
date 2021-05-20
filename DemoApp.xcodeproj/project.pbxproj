@@ -20,6 +20,13 @@
 		1A4825C52656113C009F0FFF /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A4825C32656113C009F0FFF /* ProfileViewController.xib */; };
 		1A4825C826561151009F0FFF /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4825C726561151009F0FFF /* ProfileViewModel.swift */; };
 		1A4825E62656137D009F0FFF /* App.Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4825E52656137D009F0FFF /* App.Color.swift */; };
+		1A48261F2656228E009F0FFF /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A48261D2656228E009F0FFF /* TabbarViewController.swift */; };
+		1A4826202656228E009F0FFF /* TabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A48261E2656228E009F0FFF /* TabbarViewController.xib */; };
+		1A48264426564631009F0FFF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A48264226564631009F0FFF /* SearchViewController.swift */; };
+		1A48264526564631009F0FFF /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A48264326564631009F0FFF /* SearchViewController.xib */; };
+		1A48264826564647009F0FFF /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A48264726564647009F0FFF /* SearchViewModel.swift */; };
+		1A48264F26564CD2009F0FFF /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A48264E26564CD2009F0FFF /* Session.swift */; };
+		1A48265226564D8E009F0FFF /* OptionalExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A48265126564D8E009F0FFF /* OptionalExt.swift */; };
 		1A7BAFC32655657100EE8A11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7BAFC22655657000EE8A11 /* AppDelegate.swift */; };
 		1A7BAFC72655657100EE8A11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7BAFC62655657100EE8A11 /* ViewController.swift */; };
 		1A7BAFCC2655657300EE8A11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A7BAFCB2655657300EE8A11 /* Assets.xcassets */; };
@@ -43,6 +50,13 @@
 		1A4825C32656113C009F0FFF /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		1A4825C726561151009F0FFF /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		1A4825E52656137D009F0FFF /* App.Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.Color.swift; sourceTree = "<group>"; };
+		1A48261D2656228E009F0FFF /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		1A48261E2656228E009F0FFF /* TabbarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabbarViewController.xib; sourceTree = "<group>"; };
+		1A48264226564631009F0FFF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		1A48264326564631009F0FFF /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		1A48264726564647009F0FFF /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		1A48264E26564CD2009F0FFF /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		1A48265126564D8E009F0FFF /* OptionalExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExt.swift; sourceTree = "<group>"; };
 		1A7BAFBF2655657000EE8A11 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7BAFC22655657000EE8A11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A7BAFC62655657100EE8A11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				1A4825A326560C3E009F0FFF /* UIColorExts.swift */,
+				1A48264E26564CD2009F0FFF /* Session.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -115,9 +130,11 @@
 		1A4825AB26560D27009F0FFF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				1A4825B0265610BE009F0FFF /* Profile */,
 				1A4825AF265610B5009F0FFF /* Home */,
 				1A4825AE265610B0009F0FFF /* Login */,
+				1A4825B0265610BE009F0FFF /* Profile */,
+				1A48264126564622009F0FFF /* Search */,
+				1A48261C26562275009F0FFF /* Tabbar */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,8 +195,28 @@
 		1A4825E0265612FD009F0FFF /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				1A48265126564D8E009F0FFF /* OptionalExt.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		1A48261C26562275009F0FFF /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				1A48261D2656228E009F0FFF /* TabbarViewController.swift */,
+				1A48261E2656228E009F0FFF /* TabbarViewController.xib */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		1A48264126564622009F0FFF /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				1A48264226564631009F0FFF /* SearchViewController.swift */,
+				1A48264326564631009F0FFF /* SearchViewController.xib */,
+				1A48264726564647009F0FFF /* SearchViewModel.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		1A7BAFB62655657000EE8A11 = {
@@ -293,7 +330,9 @@
 				1A7BAFCC2655657300EE8A11 /* Assets.xcassets in Resources */,
 				1A4825B4265610D2009F0FFF /* LoginViewController.xib in Resources */,
 				1A4825C52656113C009F0FFF /* ProfileViewController.xib in Resources */,
+				1A4826202656228E009F0FFF /* TabbarViewController.xib in Resources */,
 				1A4825BD2656110D009F0FFF /* HomeViewController.xib in Resources */,
+				1A48264526564631009F0FFF /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,12 +422,17 @@
 				1A4825B3265610D2009F0FFF /* LoginViewController.swift in Sources */,
 				1A4825C026561125009F0FFF /* HomeViewModel.swift in Sources */,
 				1A4825E62656137D009F0FFF /* App.Color.swift in Sources */,
+				1A48261F2656228E009F0FFF /* TabbarViewController.swift in Sources */,
 				1A4825C42656113C009F0FFF /* ProfileViewController.swift in Sources */,
+				1A48265226564D8E009F0FFF /* OptionalExt.swift in Sources */,
 				1A48259F26560BF5009F0FFF /* App.swift in Sources */,
+				1A48264826564647009F0FFF /* SearchViewModel.swift in Sources */,
 				1A4825A426560C3E009F0FFF /* UIColorExts.swift in Sources */,
 				1A4825BC2656110D009F0FFF /* HomeViewController.swift in Sources */,
+				1A48264426564631009F0FFF /* SearchViewController.swift in Sources */,
 				1A4825A726560CBF009F0FFF /* Strings.swift in Sources */,
 				1A4825C826561151009F0FFF /* ProfileViewModel.swift in Sources */,
+				1A48264F26564CD2009F0FFF /* Session.swift in Sources */,
 				1A7BAFC72655657100EE8A11 /* ViewController.swift in Sources */,
 				1A7BAFC32655657100EE8A11 /* AppDelegate.swift in Sources */,
 				1A4825B7265610E7009F0FFF /* LoginViewModel.swift in Sources */,

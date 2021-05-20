@@ -18,3 +18,14 @@ struct App {
 
     struct Fonts { }
 }
+
+extension App {
+
+    struct UserDefaultKey {
+        static let isLogin = "isLogin"
+        static let userID = "userID"
+        static let userEmail = "userEmail"
+        static let userName = "userName"
+        static let userImageURL = "userImageURL"
+    }
+}
