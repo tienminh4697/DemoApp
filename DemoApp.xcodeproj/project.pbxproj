@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 
 /* Begin PBXFileReference section */
 		0DC3E073C204F2B253B7F89F /* Pods_DemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F9C50211EF6128967673002 /* Pods-DemoApp.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.staging.xcconfig"; path = "Pods/Target Support Files/Pods-DemoApp/Pods-DemoApp.staging.xcconfig"; sourceTree = "<group>"; };
 		1A7BAFBF2655657000EE8A11 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7BAFC22655657000EE8A11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A7BAFC62655657100EE8A11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +47,7 @@
 			children = (
 				98EFFEC887746A84CBA97B3C /* Pods-DemoApp.debug.xcconfig */,
 				C231C072FBB7DD59508CE499 /* Pods-DemoApp.release.xcconfig */,
+				0F9C50211EF6128967673002 /* Pods-DemoApp.staging.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -103,6 +105,8 @@
 				1A7BAFBC2655657000EE8A11 /* Frameworks */,
 				1A7BAFBD2655657000EE8A11 /* Resources */,
 				C2FD67D5A3EA3AD8E97C1103 /* [CP] Embed Pods Frameworks */,
+				1A48257E2655FCF9009F0FFF /* ShellScript */,
+				1A482582265600CB009F0FFF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -158,7 +162,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C2FD67D5A3EA3AD8E97C1103 /* [CP] Embed Pods Frameworks */ = {
+		1A48257E2655FCF9009F0FFF /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -166,18 +170,47 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DemoApp/Pods-DemoApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
-			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoApp/Pods-DemoApp-frameworks.sh\"\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		1A482582265600CB009F0FFF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n#!/bin/bash\n";
+		};
+		C2FD67D5A3EA3AD8E97C1103 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoApp/Pods-DemoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoApp/Pods-DemoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoApp/Pods-DemoApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C8402280DA64DD40C0F897C0 /* [CP] Check Pods Manifest.lock */ = {
@@ -445,7 +478,7 @@
 		};
 		1A7BAFDE26556DBC00EE8A11 /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98EFFEC887746A84CBA97B3C /* Pods-DemoApp.debug.xcconfig */;
+			baseConfigurationReference = 0F9C50211EF6128967673002 /* Pods-DemoApp.staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
