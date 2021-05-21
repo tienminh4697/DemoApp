@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if !Session.shared.isLogin {
             setRoot(rootType: .tabbar)
         } else {
-            setRoot(rootType: .login)
+            setRoot(rootType: .tabbar)
         }
     }
 

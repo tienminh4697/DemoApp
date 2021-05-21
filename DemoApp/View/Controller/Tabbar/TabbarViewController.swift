@@ -7,8 +7,9 @@
 
 import UIKit
 
-class TabbarViewController: UIViewController {
+final class TabbarViewController: UIViewController {
 
+    // MARK: - @IBOutlets
     @IBOutlet private weak var tabbarView: UIView!
     @IBOutlet private weak var containerView: UIView!
     @IBOutlet private weak var homeView: UIView!
@@ -19,20 +20,23 @@ class TabbarViewController: UIViewController {
     @IBOutlet private weak var profileImage: UIImageView!
     @IBOutlet private weak var searchImage: UIImageView!
     @IBOutlet private weak var tabbarHeightContraint: NSLayoutConstraint!
-    @IBOutlet weak var homeBtn: UIButton!
+    @IBOutlet private weak var homeBtn: UIButton!
     @IBOutlet var tabbarButtons: [UIButton]!
 
+    // MARK: - Peroperties
     private let homeVC = HomeViewController()
     private let searchVC = SearchViewController()
     private let profileVC = ProfileViewController()
     private var selectedIndex: Int = 0
     private var viewControllers: [UIViewController] = []
 
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configTabbar()
     }
 
+    // MARK: - Private func
     private func configTabbar() {
         let homeNavi = UINavigationController(rootViewController: homeVC)
         let searchNavi = UINavigationController(rootViewController: searchVC)
@@ -54,22 +58,23 @@ class TabbarViewController: UIViewController {
         tabbarView.isHidden = false
     }
 
+    // MARK: - @IBActions
     @IBAction func tabbarButtonTouchUpInside(_ sender: UIButton) {
         if sender.tag == 0 {
-            homeImage.tintColor = .black
-            homeLabel.textColor = .black
-            searchImage.tintColor = .gray
-            profileImage.tintColor = .gray
+            homeImage.tintColor = App.Color.tabbarButton
+            homeLabel.textColor = App.Color.tabbarButton
+            searchImage.tintColor = App.Color.tabbarButons
+            profileImage.tintColor = App.Color.tabbarButons
         } else if sender.tag == 1 {
-            homeImage.tintColor = .gray
-            homeLabel.textColor = .gray
-            searchImage.tintColor = .black
-            profileImage.tintColor = .gray
+            homeImage.tintColor = App.Color.tabbarButons
+            homeLabel.textColor = App.Color.tabbarButons
+            searchImage.tintColor = App.Color.tabbarButton
+            profileImage.tintColor = App.Color.tabbarButons
         } else {
-            homeImage.tintColor = .gray
-            homeLabel.textColor = .gray
-            searchImage.tintColor = .gray
-            profileImage.tintColor = .black
+            homeImage.tintColor = App.Color.tabbarButons
+            homeLabel.textColor = App.Color.tabbarButons
+            searchImage.tintColor = App.Color.tabbarButons
+            profileImage.tintColor = App.Color.tabbarButton
         }
         selectedIndex = sender.tag
         let previousVC = viewControllers[selectedIndex]

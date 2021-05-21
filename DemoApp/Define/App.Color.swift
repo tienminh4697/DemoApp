@@ -17,4 +17,6 @@ extension App.Color {
     static let shadowColor: CGColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.1970248288)
     static let backgroundColorEvaluate: UIColor = #colorLiteral(red: 0.1960784314, green: 0.7725490196, blue: 0.9568627451, alpha: 0.5)
     static let grayColor: UIColor = #colorLiteral(red: 0.462745098, green: 0.5568627451, blue: 0.6941176471, alpha: 1)
+    static let tabbarButton: UIColor = #colorLiteral(red: 0.8470588235, green: 0.262745098, blue: 0.08235294118, alpha: 1)
+    static let tabbarButons: UIColor = #colorLiteral(red: 1, green: 0.6705882353, blue: 0.568627451, alpha: 1)
 }
