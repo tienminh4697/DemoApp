@@ -27,6 +27,7 @@
 		1A48264826564647009F0FFF /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A48264726564647009F0FFF /* SearchViewModel.swift */; };
 		1A48264F26564CD2009F0FFF /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A48264E26564CD2009F0FFF /* Session.swift */; };
 		1A48265226564D8E009F0FFF /* OptionalExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A48265126564D8E009F0FFF /* OptionalExt.swift */; };
+		1A4CF287265758B700BBE7CD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4CF286265758B700BBE7CD /* Extensions.swift */; };
 		1A7BAFC32655657100EE8A11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7BAFC22655657000EE8A11 /* AppDelegate.swift */; };
 		1A7BAFC72655657100EE8A11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7BAFC62655657100EE8A11 /* ViewController.swift */; };
 		1A7BAFCC2655657300EE8A11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A7BAFCB2655657300EE8A11 /* Assets.xcassets */; };
@@ -57,6 +58,8 @@
 		1A48264726564647009F0FFF /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		1A48264E26564CD2009F0FFF /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		1A48265126564D8E009F0FFF /* OptionalExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExt.swift; sourceTree = "<group>"; };
+		1A4CF286265758B700BBE7CD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1A4CF28B265766E900BBE7CD /* DemoApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoApp.entitlements; sourceTree = "<group>"; };
 		1A7BAFBF2655657000EE8A11 /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7BAFC22655657000EE8A11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A7BAFC62655657100EE8A11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -196,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				1A48265126564D8E009F0FFF /* OptionalExt.swift */,
+				1A4CF286265758B700BBE7CD /* Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -243,6 +247,7 @@
 		1A7BAFC12655657000EE8A11 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				1A4CF28B265766E900BBE7CD /* DemoApp.entitlements */,
 				1A7BAFC22655657000EE8A11 /* AppDelegate.swift */,
 				1A7BAFD02655657300EE8A11 /* Info.plist */,
 				1A48259D26560BE6009F0FFF /* Define */,
@@ -434,6 +439,7 @@
 				1A4825C826561151009F0FFF /* ProfileViewModel.swift in Sources */,
 				1A48264F26564CD2009F0FFF /* Session.swift in Sources */,
 				1A7BAFC72655657100EE8A11 /* ViewController.swift in Sources */,
+				1A4CF287265758B700BBE7CD /* Extensions.swift in Sources */,
 				1A7BAFC32655657100EE8A11 /* AppDelegate.swift in Sources */,
 				1A4825B7265610E7009F0FFF /* LoginViewModel.swift in Sources */,
 			);
@@ -575,6 +581,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DemoApp/DemoApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -594,6 +601,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DemoApp/DemoApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -674,6 +682,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DemoApp/DemoApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
