@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabbarViewController" customModule="DemoApp" customModuleProvider="target">
             <connections>
+                <outlet property="btn2" destination="vNf-g9-Wsp" id="d1G-uJ-Bks"/>
+                <outlet property="btn3" destination="FMO-jA-wkb" id="jG2-4K-H2k"/>
                 <outlet property="containerView" destination="khb-dW-52z" id="g9X-BE-L8g"/>
                 <outlet property="homeBtn" destination="Eqy-aG-q09" id="P00-WE-cF2"/>
                 <outlet property="homeImage" destination="W5b-b6-4wL" id="Tdf-Cq-FWl"/>
@@ -34,24 +36,24 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khb-dW-52z" userLabel="Container">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Doh-j6-PEL" userLabel="TabbarView">
-                    <rect key="frame" x="0.0" y="806" width="414" height="90"/>
+                <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Doh-j6-PEL" userLabel="TabbarView">
+                    <rect key="frame" x="15" y="811" width="384" height="70"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eLe-pm-KOK" userLabel="View1">
-                            <rect key="frame" x="0.0" y="0.0" width="207" height="90"/>
+                        <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eLe-pm-KOK" userLabel="View1">
+                            <rect key="frame" x="0.0" y="0.0" width="192" height="70"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqy-aG-q09">
-                                    <rect key="frame" x="15" y="15" width="177" height="60"/>
-                                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqy-aG-q09">
+                                    <rect key="frame" x="15" y="15" width="162" height="40"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <connections>
                                         <action selector="tabbarButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="X7v-Bx-qMP"/>
                                     </connections>
                                 </button>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-home" translatesAutoresizingMaskIntoConstraints="NO" id="W5b-b6-4wL">
-                                    <rect key="frame" x="60" y="32" width="27" height="26"/>
+                                    <rect key="frame" x="60" y="22" width="27" height="26"/>
                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="W5b-b6-4wL" secondAttribute="height" multiplier="25:24" id="FlL-ag-AhH"/>
@@ -59,13 +61,13 @@
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePs-xB-mkc">
-                                    <rect key="frame" x="94" y="34.5" width="45.5" height="21"/>
+                                    <rect key="frame" x="94" y="24.5" width="45.5" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="ePs-xB-mkc" firstAttribute="leading" secondItem="W5b-b6-4wL" secondAttribute="trailing" constant="7" id="1rb-cd-jeX"/>
                                 <constraint firstItem="W5b-b6-4wL" firstAttribute="centerY" secondItem="Eqy-aG-q09" secondAttribute="centerY" id="79p-gg-KnQ"/>
@@ -77,18 +79,19 @@
                                 <constraint firstItem="Eqy-aG-q09" firstAttribute="leading" secondItem="eLe-pm-KOK" secondAttribute="leading" constant="15" id="qE6-TT-FIo"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MBw-gr-Ad5" userLabel="View2">
-                            <rect key="frame" x="207" y="0.0" width="103.5" height="90"/>
+                        <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MBw-gr-Ad5" userLabel="View2">
+                            <rect key="frame" x="192" y="0.0" width="96" height="70"/>
                             <subviews>
-                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNf-g9-Wsp">
-                                    <rect key="frame" x="15" y="15" width="73.5" height="60"/>
+                                <button opaque="NO" alpha="0.69999999999999996" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNf-g9-Wsp">
+                                    <rect key="frame" x="15" y="15" width="66" height="40"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <connections>
                                         <action selector="tabbarButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="Igv-I4-Txc"/>
                                     </connections>
                                 </button>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifier" translatesAutoresizingMaskIntoConstraints="NO" id="03v-Au-2nN">
-                                    <rect key="frame" x="38.5" y="31.5" width="27" height="27"/>
+                                    <rect key="frame" x="34.5" y="21.5" width="27" height="27"/>
                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="03v-Au-2nN" secondAttribute="height" id="0Cr-tJ-RAj"/>
@@ -96,7 +99,7 @@
                                     </constraints>
                                 </imageView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="03v-Au-2nN" firstAttribute="centerY" secondItem="vNf-g9-Wsp" secondAttribute="centerY" id="W0i-2F-Jco"/>
                                 <constraint firstItem="vNf-g9-Wsp" firstAttribute="leading" secondItem="MBw-gr-Ad5" secondAttribute="leading" constant="15" id="b26-Ed-Hv0"/>
@@ -106,18 +109,19 @@
                                 <constraint firstItem="03v-Au-2nN" firstAttribute="centerX" secondItem="vNf-g9-Wsp" secondAttribute="centerX" id="v7M-ab-Bfm"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="apC-L0-y3x" userLabel="View3">
-                            <rect key="frame" x="310.5" y="0.0" width="103.5" height="90"/>
+                        <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="apC-L0-y3x" userLabel="View3">
+                            <rect key="frame" x="288" y="0.0" width="96" height="70"/>
                             <subviews>
-                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMO-jA-wkb">
-                                    <rect key="frame" x="15" y="15" width="73.5" height="60"/>
+                                <button opaque="NO" alpha="0.69999999999999996" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMO-jA-wkb">
+                                    <rect key="frame" x="15" y="15" width="66" height="40"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <connections>
                                         <action selector="tabbarButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="bwX-ZX-QEU"/>
                                     </connections>
                                 </button>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="W0i-PQ-NRD">
-                                    <rect key="frame" x="38.5" y="31.5" width="27" height="27"/>
+                                    <rect key="frame" x="34.5" y="21.5" width="27" height="27"/>
                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="W0i-PQ-NRD" secondAttribute="height" id="1FH-Us-MPq"/>
@@ -125,7 +129,7 @@
                                     </constraints>
                                 </imageView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="FMO-jA-wkb" firstAttribute="top" secondItem="apC-L0-y3x" secondAttribute="top" constant="15" id="CIp-pH-8Mc"/>
                                 <constraint firstAttribute="bottom" secondItem="FMO-jA-wkb" secondAttribute="bottom" constant="15" id="WiB-EU-VBH"/>
@@ -136,12 +140,12 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="apC-L0-y3x" firstAttribute="leading" secondItem="MBw-gr-Ad5" secondAttribute="trailing" id="23U-Yw-qxh"/>
                         <constraint firstItem="eLe-pm-KOK" firstAttribute="leading" secondItem="Doh-j6-PEL" secondAttribute="leading" id="AOW-gg-2kU"/>
                         <constraint firstItem="MBw-gr-Ad5" firstAttribute="leading" secondItem="eLe-pm-KOK" secondAttribute="trailing" id="FEo-Rh-Vba"/>
-                        <constraint firstAttribute="height" constant="90" id="Wz1-fL-Wu2"/>
+                        <constraint firstAttribute="height" constant="70" id="Wz1-fL-Wu2"/>
                         <constraint firstItem="apC-L0-y3x" firstAttribute="width" secondItem="MBw-gr-Ad5" secondAttribute="width" id="Yat-bj-Lba"/>
                         <constraint firstItem="eLe-pm-KOK" firstAttribute="width" secondItem="Doh-j6-PEL" secondAttribute="width" multiplier="0.5" id="cw8-Rk-Yt1"/>
                         <constraint firstAttribute="bottom" secondItem="apC-L0-y3x" secondAttribute="bottom" id="g3Q-a6-3XY"/>
@@ -159,9 +163,9 @@
             <constraints>
                 <constraint firstItem="khb-dW-52z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Er2-8U-mcs"/>
                 <constraint firstItem="khb-dW-52z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XQV-bV-NZa"/>
-                <constraint firstAttribute="bottom" secondItem="Doh-j6-PEL" secondAttribute="bottom" id="YI2-UN-Am9"/>
-                <constraint firstItem="Doh-j6-PEL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aeT-wV-oHU"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Doh-j6-PEL" secondAttribute="trailing" id="goL-5a-KYB"/>
+                <constraint firstAttribute="bottom" secondItem="Doh-j6-PEL" secondAttribute="bottom" constant="15" id="YI2-UN-Am9"/>
+                <constraint firstItem="Doh-j6-PEL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="aeT-wV-oHU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Doh-j6-PEL" secondAttribute="trailing" constant="15" id="goL-5a-KYB"/>
                 <constraint firstItem="khb-dW-52z" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="m1e-Wh-hIw"/>
                 <constraint firstAttribute="bottom" secondItem="khb-dW-52z" secondAttribute="bottom" id="vow-B3-1zb"/>
             </constraints>
@@ -175,12 +179,6 @@
         <image name="user" width="512" height="512.00201416015625"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

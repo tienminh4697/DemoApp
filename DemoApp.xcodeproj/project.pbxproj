@@ -118,16 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				1A4825AB26560D27009F0FFF /* Controller */,
-				1A4825AA26560D1A009F0FFF /* Base */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		1A4825AA26560D1A009F0FFF /* Base */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		1A4825AB26560D27009F0FFF /* Controller */ = {
@@ -149,13 +141,6 @@
 				1A7BAFCB2655657300EE8A11 /* Assets.xcassets */,
 			);
 			path = Support;
-			sourceTree = "<group>";
-		};
-		1A4825AD26560D50009F0FFF /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		1A4825AE265610B0009F0FFF /* Login */ = {
@@ -186,13 +171,6 @@
 				1A4825C726561151009F0FFF /* ProfileViewModel.swift */,
 			);
 			path = Profile;
-			sourceTree = "<group>";
-		};
-		1A4825CD265611F1009F0FFF /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		1A4825E0265612FD009F0FFF /* Extension */ = {
@@ -253,8 +231,6 @@
 				1A48259D26560BE6009F0FFF /* Define */,
 				1A4825E0265612FD009F0FFF /* Extension */,
 				1A4825A226560C29009F0FFF /* Library */,
-				1A4825AD26560D50009F0FFF /* Model */,
-				1A4825CD265611F1009F0FFF /* Network */,
 				1A4825AC26560D37009F0FFF /* Support */,
 				1A4825A926560D13009F0FFF /* View */,
 				1A7BAFC62655657100EE8A11 /* ViewController.swift */,

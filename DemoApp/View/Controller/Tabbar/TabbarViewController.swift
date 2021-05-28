@@ -21,6 +21,8 @@ final class TabbarViewController: UIViewController {
     @IBOutlet private weak var searchImage: UIImageView!
     @IBOutlet private weak var tabbarHeightContraint: NSLayoutConstraint!
     @IBOutlet private weak var homeBtn: UIButton!
+    @IBOutlet private weak var btn2: UIButton!
+    @IBOutlet private weak var btn3: UIButton!
     @IBOutlet var tabbarButtons: [UIButton]!
 
     // MARK: - Peroperties
