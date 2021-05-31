@@ -7,6 +7,7 @@
 
 import UIKit
 import UserNotifications
+import FBSDKCoreKit
 
 enum RootType {
     case login
@@ -28,6 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        userdefault.set(false, forKey: App.UserDefaultKey.isLogin)
         configWindow()
         return true
     }
@@ -36,10 +38,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
-        if !Session.shared.isLogin {
+        if Session.shared.isLogin {
             setRoot(rootType: .tabbar)
         } else {
-            setRoot(rootType: .tabbar)
+            setRoot(rootType: .login)
         }
     }
 

@@ -9,5 +9,7 @@ target 'DemoApp' do
 
 pod 'SDWebImage', '5.0'
 pod 'SwiftLint'
+pod 'FBSDKLoginKit'
+
 gem 'linterbot'
 end

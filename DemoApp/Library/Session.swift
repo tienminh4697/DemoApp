@@ -37,6 +37,16 @@ final class Session {
         }
     }
 
+    // MARK: - Token
+    var accessToken: String? {
+        get {
+            return userdefault.string(forKey: App.UserDefaultKey.accessToken)
+        }
+        set {
+            userdefault.set(newValue, forKey: App.UserDefaultKey.accessToken)
+        }
+    }
+
     // MARK: - LoginInfo
     private(set) var userID: String {
         get {

@@ -1,10 +1,21 @@
 PODS:
+  - FBSDKCoreKit (9.2.0):
+    - FBSDKCoreKit/Basics (= 9.2.0)
+    - FBSDKCoreKit/Core (= 9.2.0)
+  - FBSDKCoreKit/Basics (9.2.0)
+  - FBSDKCoreKit/Core (9.2.0):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (9.2.0):
+    - FBSDKLoginKit/Login (= 9.2.0)
+  - FBSDKLoginKit/Login (9.2.0):
+    - FBSDKCoreKit (~> 9.2.0)
   - SDWebImage (5.0.0):
     - SDWebImage/Core (= 5.0.0)
   - SDWebImage/Core (5.0.0)
   - SwiftLint (0.43.1)
 
 DEPENDENCIES:
+  - FBSDKLoginKit
   - SDWebImage (= 5.0)
   - SwiftLint
 
@@ -12,12 +23,16 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - SDWebImage
   trunk:
+    - FBSDKCoreKit
+    - FBSDKLoginKit
     - SwiftLint
 
 SPEC CHECKSUMS:
+  FBSDKCoreKit: dace5abafc2fd9272733e6d027bcf18102712117
+  FBSDKLoginKit: 43f377b451d391f5bc9dd774f51a391db1072029
   SDWebImage: 5de80a0302de9e377e62f47d2fa1304efff0e55f
   SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: 2b497d0493d11e67e92f1a1d388ebefb65d6da42
+PODFILE CHECKSUM: 75cf1812f5afddc7c1190ac10120251f476cb510
 
 COCOAPODS: 1.9.3
