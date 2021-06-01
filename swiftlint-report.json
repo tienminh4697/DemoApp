@@ -3,9 +3,6 @@
     "character" : null,
     "file" : "\/Users\/t.minh\/DemoApp\/DemoApp\/AppDelegate.swift",
     "line" : 15,
-    "reason" : "Line should be 110 characters or less: currently 145 characters",
     "rule_id" : "line_length",
-    "severity" : "Warning",
-    "type" : "Line Length"
   }
 ]

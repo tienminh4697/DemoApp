@@ -30,8 +30,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         userdefault.set(false, forKey: App.UserDefaultKey.isLogin)
+        ApplicationDelegate.shared.application( application, didFinishLaunchingWithOptions: launchOptions)
         configWindow()
         return true
+    }
+
+    func application( _ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:] ) -> Bool {
+        ApplicationDelegate.shared.application( app, open: url, sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplication.OpenURLOptionsKey.annotation] )
     }
 
     private func configWindow() {
@@ -49,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         switch rootType {
         case .login:
             Session.shared.clearData()
-            window?.rootViewController = LoginViewController()
+            window?.rootViewController = HomeViewController()
         case .tabbar:
             Session.shared.isLogin = true
             window?.rootViewController = TabbarViewController()

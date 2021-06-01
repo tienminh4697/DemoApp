@@ -32,6 +32,8 @@
 		1A7BAFC72655657100EE8A11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7BAFC62655657100EE8A11 /* ViewController.swift */; };
 		1A7BAFCC2655657300EE8A11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A7BAFCB2655657300EE8A11 /* Assets.xcassets */; };
 		1A7BAFCF2655657300EE8A11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A7BAFCD2655657300EE8A11 /* LaunchScreen.storyboard */; };
+		1AF451082664E87C00999ADE /* TutorialHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF451072664E87C00999ADE /* TutorialHomeView.swift */; };
+		1AF4510B2664E88B00999ADE /* TutorialHomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF4510A2664E88B00999ADE /* TutorialHomeView.xib */; };
 		A96C28813E98716411D69413 /* Pods_DemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC3E073C204F2B253B7F89F /* Pods_DemoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,8 @@
 		1A7BAFDF26556FEA00EE8A11 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		1A7BAFE026556FFB00EE8A11 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		1A7BAFE12655700E00EE8A11 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		1AF451072664E87C00999ADE /* TutorialHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialHomeView.swift; sourceTree = "<group>"; };
+		1AF4510A2664E88B00999ADE /* TutorialHomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialHomeView.xib; sourceTree = "<group>"; };
 		98EFFEC887746A84CBA97B3C /* Pods-DemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoApp/Pods-DemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C231C072FBB7DD59508CE499 /* Pods-DemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoApp/Pods-DemoApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,6 +129,7 @@
 		1A4825AB26560D27009F0FFF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1AF451062664E85300999ADE /* Tutorial */,
 				1A4825AF265610B5009F0FFF /* Home */,
 				1A4825AE265610B0009F0FFF /* Login */,
 				1A4825B0265610BE009F0FFF /* Profile */,
@@ -238,6 +243,15 @@
 			path = DemoApp;
 			sourceTree = "<group>";
 		};
+		1AF451062664E85300999ADE /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				1AF451072664E87C00999ADE /* TutorialHomeView.swift */,
+				1AF4510A2664E88B00999ADE /* TutorialHomeView.xib */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
 		737EC4F5E36B9D01FC7A8F74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +326,7 @@
 				1A4825B4265610D2009F0FFF /* LoginViewController.xib in Resources */,
 				1A4825C52656113C009F0FFF /* ProfileViewController.xib in Resources */,
 				1A4826202656228E009F0FFF /* TabbarViewController.xib in Resources */,
+				1AF4510B2664E88B00999ADE /* TutorialHomeView.xib in Resources */,
 				1A4825BD2656110D009F0FFF /* HomeViewController.xib in Resources */,
 				1A48264526564631009F0FFF /* SearchViewController.xib in Resources */,
 			);
@@ -401,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A4825B3265610D2009F0FFF /* LoginViewController.swift in Sources */,
+				1AF451082664E87C00999ADE /* TutorialHomeView.swift in Sources */,
 				1A4825C026561125009F0FFF /* HomeViewModel.swift in Sources */,
 				1A4825E62656137D009F0FFF /* App.Color.swift in Sources */,
 				1A48261F2656228E009F0FFF /* TabbarViewController.swift in Sources */,

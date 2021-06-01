@@ -26,6 +26,8 @@ final class LoginViewController: UIViewController {
     @IBOutlet private weak var passTextField: UITextField!
     @IBOutlet private weak var loginButton: UIButton!
 
+    let fbLoginButton: FBLoginButton = FBLoginButton()
+
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,8 +49,20 @@ final class LoginViewController: UIViewController {
     }
 
     @IBAction private func facebookLoginTouchInSide(_ sender: UIButton) {
+        print("facebook login")
+        fbLoginButton.delegate = self
     }
 
     @IBAction private func zaloLoginTouchUpInside(_ sender: UIButton) {
+    }
+}
+
+extension LoginViewController: LoginButtonDelegate {
+    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
+        // logout
+    }
+
+    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+        // result
     }
 }
