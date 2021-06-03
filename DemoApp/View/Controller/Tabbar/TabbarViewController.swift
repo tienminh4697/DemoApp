@@ -13,7 +13,6 @@ final class TabbarViewController: UIViewController {
     @IBOutlet private weak var tabbarView: UIView!
     @IBOutlet private weak var containerView: UIView!
     @IBOutlet private weak var homeView: UIView!
-    @IBOutlet private weak var homeLabel: UILabel!
     @IBOutlet private weak var searchView: UIView!
     @IBOutlet private weak var profileView: UIView!
     @IBOutlet private weak var homeImage: UIImageView!
@@ -24,6 +23,9 @@ final class TabbarViewController: UIViewController {
     @IBOutlet private weak var btn2: UIButton!
     @IBOutlet private weak var btn3: UIButton!
     @IBOutlet var tabbarButtons: [UIButton]!
+    @IBOutlet private weak var titleHome: UILabel!
+    @IBOutlet private weak var titleSearch: UILabel!
+    @IBOutlet private weak var titleProfile: UILabel!
 
     // MARK: - Peroperties
     private let homeVC = HomeViewController()
@@ -64,19 +66,36 @@ final class TabbarViewController: UIViewController {
     @IBAction func tabbarButtonTouchUpInside(_ sender: UIButton) {
         if sender.tag == 0 {
             homeImage.tintColor = App.Color.tabbarButton
-            homeLabel.textColor = App.Color.tabbarButton
-            searchImage.tintColor = App.Color.tabbarButons
-            profileImage.tintColor = App.Color.tabbarButons
+            searchImage.tintColor = App.Color.tabbarButtons
+            profileImage.tintColor = App.Color.tabbarButtons
+            titleHome.textColor = App.Color.tabbarButton
+            titleSearch.textColor = App.Color.tabbarButtons
+            titleProfile.textColor = App.Color.tabbarButtons
+            titleHome.isHidden = false
+            titleSearch.isHidden = true
+            titleProfile.isHidden = true
         } else if sender.tag == 1 {
-            homeImage.tintColor = App.Color.tabbarButons
-            homeLabel.textColor = App.Color.tabbarButons
+            homeImage.tintColor = App.Color.tabbarButtons
+            titleHome.textColor = App.Color.tabbarButtons
             searchImage.tintColor = App.Color.tabbarButton
-            profileImage.tintColor = App.Color.tabbarButons
+            profileImage.tintColor = App.Color.tabbarButtons
+            titleHome.textColor = App.Color.tabbarButtons
+            titleSearch.textColor = App.Color.tabbarButton
+            titleProfile.textColor = App.Color.tabbarButtons
+            titleHome.isHidden = true
+            titleSearch.isHidden = false
+            titleProfile.isHidden = true
         } else {
-            homeImage.tintColor = App.Color.tabbarButons
-            homeLabel.textColor = App.Color.tabbarButons
-            searchImage.tintColor = App.Color.tabbarButons
+            homeImage.tintColor = App.Color.tabbarButtons
+            titleHome.textColor = App.Color.tabbarButtons
+            searchImage.tintColor = App.Color.tabbarButtons
             profileImage.tintColor = App.Color.tabbarButton
+            titleHome.textColor = App.Color.tabbarButtons
+            titleSearch.textColor = App.Color.tabbarButtons
+            titleProfile.textColor = App.Color.tabbarButton
+            titleHome.isHidden = true
+            titleSearch.isHidden = true
+            titleProfile.isHidden = false
         }
         selectedIndex = sender.tag
         let previousVC = viewControllers[selectedIndex]
