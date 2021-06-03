@@ -129,6 +129,7 @@
 		1A4825AB26560D27009F0FFF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1A9227C62665EBC800C5702F /* QRcode */,
 				1AF451062664E85300999ADE /* Tutorial */,
 				1A4825AF265610B5009F0FFF /* Home */,
 				1A4825AE265610B0009F0FFF /* Login */,
@@ -241,6 +242,13 @@
 				1A7BAFC62655657100EE8A11 /* ViewController.swift */,
 			);
 			path = DemoApp;
+			sourceTree = "<group>";
+		};
+		1A9227C62665EBC800C5702F /* QRcode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = QRcode;
 			sourceTree = "<group>";
 		};
 		1AF451062664E85300999ADE /* Tutorial */ = {

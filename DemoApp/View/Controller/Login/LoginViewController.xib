@@ -13,6 +13,7 @@
                 <outlet property="contentView" destination="4sG-Kr-lde" id="eOl-m4-RdK"/>
                 <outlet property="gmailTextField" destination="nPd-zZ-ckf" id="FDs-Hh-w8J"/>
                 <outlet property="loginButton" destination="3VB-4H-ZLj" id="tBB-2C-OPi"/>
+                <outlet property="loginbyFBButton" destination="wF1-b6-WMd" id="Hmm-hG-rfL"/>
                 <outlet property="passTextField" destination="dKR-4H-sAH" id="OTx-ij-JHK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

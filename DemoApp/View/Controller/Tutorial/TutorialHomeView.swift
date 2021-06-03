@@ -9,6 +9,7 @@ import UIKit
 
 final class TutorialHomeView: UIView {
 
+    // MARK: - IBOutlets
     @IBOutlet private weak var containerView: UIView!
     @IBOutlet private weak var view1: UIView!
     @IBOutlet private weak var view2: UIView!
@@ -22,6 +23,7 @@ final class TutorialHomeView: UIView {
     @IBOutlet private weak var close3: UIButton!
 
     var index = 0
+
     // MARK: - Init
     override init(frame: CGRect) {
         super.init(frame: frame)

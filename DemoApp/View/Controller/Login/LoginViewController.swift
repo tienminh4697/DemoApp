@@ -14,7 +14,6 @@ final class LoginViewController: UIViewController {
 
     // MARK: - Enum
     enum LoginType {
-        case normal
         case facebook
         case google
         case zalo
@@ -25,9 +24,9 @@ final class LoginViewController: UIViewController {
     @IBOutlet private weak var gmailTextField: UITextField!
     @IBOutlet private weak var passTextField: UITextField!
     @IBOutlet private weak var loginButton: UIButton!
+    @IBOutlet private weak var loginbyFBButton: UIButton!
 
-    let fbLoginButton: FBLoginButton = FBLoginButton()
-
+    let loginManager = LoginManager()
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +40,28 @@ final class LoginViewController: UIViewController {
         loginButton.backgroundColor = App.Color.mainColor
     }
 
+    private func handleLogin(_ type: LoginType) {
+        switch type {
+        case .facebook:
+            if AccessToken.current != nil {
+                loginManager.logOut()
+            } else {
+                loginManager.logIn(permissions: [], from: self) { (result, error) in
+                    guard error == nil else { return }
+                    guard let result = result, !result.isCancelled else { return }
+                    Profile.loadCurrentProfile { (profile, _) in
+                        guard let profile = profile else { return }
+                        print("\(profile.userID)")
+                        Session.shared.isLogin = true
+                        AppDelegate.shared.setRoot(rootType: .tabbar)
+                    }
+                }
+            }
+        case .google: break
+        case .zalo: break
+        }
+    }
+
     // MARK: - IBActions
     @IBAction private func loginButtonTouchUpInside(_ sender: UIButton) {
     }
@@ -49,20 +70,9 @@ final class LoginViewController: UIViewController {
     }
 
     @IBAction private func facebookLoginTouchInSide(_ sender: UIButton) {
-        print("facebook login")
-        fbLoginButton.delegate = self
+        handleLogin(.facebook)
     }
 
     @IBAction private func zaloLoginTouchUpInside(_ sender: UIButton) {
-    }
-}
-
-extension LoginViewController: LoginButtonDelegate {
-    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
-        // logout
-    }
-
-    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
-        // result
     }
 }
