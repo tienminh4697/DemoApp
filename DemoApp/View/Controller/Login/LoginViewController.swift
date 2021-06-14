@@ -25,6 +25,7 @@ final class LoginViewController: UIViewController {
     @IBOutlet private weak var passTextField: UITextField!
     @IBOutlet private weak var loginButton: UIButton!
     @IBOutlet private weak var loginbyFBButton: UIButton!
+    @IBOutlet private weak var containerView: UIView!
 
     let loginManager = LoginManager()
     // MARK: - Life cycle
@@ -38,6 +39,7 @@ final class LoginViewController: UIViewController {
         contentView.layer.cornerRadius = 15
         loginButton.layer.cornerRadius = 15
         loginButton.backgroundColor = App.Color.mainColor
+        containerView.backgroundColor = App.Color.backgroundColorEvaluate
     }
 
     private func handleLogin(_ type: LoginType) {

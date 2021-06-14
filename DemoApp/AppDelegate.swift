@@ -44,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
-        if !Session.shared.isLogin {
+        if Session.shared.isLogin {
             setRoot(rootType: .tabbar)
         } else {
             setRoot(rootType: .login)
@@ -61,7 +61,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window?.rootViewController = TabbarViewController()
         }
     }
-    
+
     private func trakingApp() {
         if #available(iOS 14.0, *) , ATTrackingManager.trackingAuthorizationStatus == .notDetermined {
             ATTrackingManager.requestTrackingAuthorization { status in

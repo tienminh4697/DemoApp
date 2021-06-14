@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="DemoApp" customModuleProvider="target">
             <connections>
+                <outlet property="containerView" destination="tYW-Cv-dQw" id="QiP-of-MkN"/>
                 <outlet property="contentView" destination="4sG-Kr-lde" id="eOl-m4-RdK"/>
                 <outlet property="gmailTextField" destination="nPd-zZ-ckf" id="FDs-Hh-w8J"/>
                 <outlet property="loginButton" destination="3VB-4H-ZLj" id="tBB-2C-OPi"/>
